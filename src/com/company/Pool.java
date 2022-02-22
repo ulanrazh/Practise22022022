@@ -3,23 +3,20 @@ package com.company;
 import java.util.Arrays;
 
 public class Pool {
-    private Person[] people;
+    private Swimmable[] people;
 
     public Pool() {
     }
 
-    public Pool(Programmer programmer, Programmer programmer1, Sportsman sportsman, Sportsman sportsman1, Driver driver, Driver driver1, Seaman seaman, Seaman seaman1) {
-    }
-
-    public Pool(Person[] people) {
+    public Pool(Swimmable[] people) {
         this.people = people;
     }
 
-    public Person[] getPeople() {
+    public Swimmable[] getPeople() {
         return people;
     }
 
-    public void setPeople(Person[] people) {
+    public void setPeople(Swimmable[] people) {
         this.people = people;
     }
 
@@ -30,3 +27,4 @@ public class Pool {
                 '}';
     }
 }
+

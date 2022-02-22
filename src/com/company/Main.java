@@ -13,20 +13,20 @@ public class Main {
 //        stringBuffer.append(" Ulan");
 //        System.out.println(stringBuffer);
 
-        Programmer programmer = new Programmer();
-        Programmer programmer1 = new Programmer();
-        Sportsman sportsman = new Sportsman();
-        Sportsman sportsman1 = new Sportsman();
-        Driver driver = new Driver();
-        Driver driver1 = new Driver();
-        Seaman seaman = new Seaman();
-        Seaman seaman1 = new Seaman();
+        Programmer programmer = new Programmer("Ulan",33,"male");
+        Programmer programmer1 = new Programmer("Bulan",25,"male");
+        Sportsman sportsman = new Sportsman("Siymyk",21,"Karate");
+        Sportsman sportsman1 = new Sportsman("Bekten",33,"Judo");
+        Driver driver = new Driver("Ulan",33,"male");
+        Driver driver1 = new Driver("Ulan",33,"male");
+        Seaman seaman = new Seaman("Ulan",33,"male");
+        Seaman seaman1 = new Seaman("Ulan",33,"male");
 
-        Person[] people = {programmer,programmer1,sportsman,sportsman1,driver,driver1,seaman,seaman1};
+        Swimmable[] people = {programmer,programmer1,sportsman,sportsman1,seaman,seaman1};
         Pool pool = new Pool();
         pool.setPeople(people);
         System.out.println(pool);
 
-        
+
     }
 }
